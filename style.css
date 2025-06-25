@@ -7,8 +7,8 @@
    .header-style {
     display: flex;
     align-items: center;
-    justify-content: center;   /* ⬅️ jo space-between */
-    gap: 40px;                 /* sa afër t’i duash (20-40px) */
+    justify-content: center;  
+    gap: 40px;              
     padding: 10px;
     background-color: white;
 }
