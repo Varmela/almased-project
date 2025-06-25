@@ -1,0 +1,61 @@
+* {
+    margin: 0;
+    padding: 10px;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+   .header-style {
+    display: flex;
+    align-items: center;
+    justify-content: center;   /* ⬅️ jo space-between */
+    gap: 40px;                 /* sa afër t’i duash (20-40px) */
+    padding: 10px;
+    background-color: white;
+}
+
+.logo-class {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.shop-btn {
+    padding: 10px 20px;
+    background-color: rgba(85,171,38,255);
+    color: white;
+    border: none;
+    border-radius: 25px;
+    font-weight: bold;
+    cursor: pointer;
+    
+}
+
+.links {
+
+    display: flex;
+    justify-content: center;
+}
+
+.links-list {
+    display: flex;
+    gap: 30px;
+    list-style: none;
+}
+
+.links-list li a {
+    text-decoration: none;
+    color: #333;
+    font-size: 16px;
+    font-weight: 500;
+ 
+}
+
+
+
+.image-list {
+    display: flex;
+    gap: 20px;
+    font-size: 20px;
+    color: rgba(85,171,38,255);
+    cursor: pointer;
+}
