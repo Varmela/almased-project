@@ -53,7 +53,9 @@
  
 }
 
-
+.links-list li a:hover {
+    color: rgba(85,171,38,255);
+}
 
 .image-list {
     display: flex;
@@ -226,15 +228,92 @@ div .healthy-aging,
   top: 25px;
 }
 
+.almased-energy {
+  display: flex;
+  margin-top: 50px;
+  color: #439333;
+  padding: 0;
+  gap: 0; /* Kjo heq hapësirën mes dy div-ëve */
+}
+
+.energy-text {
+  background-color: rgba(213, 231, 185, 1);
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  padding: 2rem;
+  text-align: center;
+  position: relative;
+}
+
+.energy-text h2 {
+  font-size: 2.8rem; /* më i madh */
+  line-height: 1.3;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  margin-bottom: 0.5rem;
+}
+
+.energy-text .author {
+  font-style: italic;
+  font-size: 1rem;
+  margin-bottom: 2rem;
+}
+
+.story-center {
+  flex-grow: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.story-btn {
+  padding: 12px 24px;
+  background-color: rgba(85, 171, 38, 1);
+  color: white;
+  border: none;
+  border-radius: 25px;
+  font-weight: bold;
+  font-size: 1rem;
+  cursor: pointer;
+  width: 50%;
+  position: relative;
+}
+
+.arrows {
+  position: absolute;
+  bottom: 1.5rem;
+  left: 2rem;
+  display: flex;
+  gap: 1.5rem;
+  font-size: 1.5rem;
+}
+
+.energy-image {
+  flex: 1;
+}
+
+.energy-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+
+
+
+
+
+
 
 /* MEDIA QUERY: MOBILE & TABLET */
-@media (max-width: 992px) {
+ @media (max-width: 992px) {
   .menu-toggle {
-    display: block;         /* Menu */
+    display: block;     
   }
 
   .logo-class {
-    margin: 0 auto;         /* Logo in the center */
+    margin: 0 auto;      
   }
 
   .links {
@@ -245,14 +324,14 @@ div .healthy-aging,
     background: #fff;
     flex-direction: column;
     align-items: center;
-    display: none;          /* Do not display automatically */
+    display: none;         
     border-top: 1px solid #eee;
     padding: 12px 0;
     z-index: 1000;
   }
 
   .links.open {
-    display: flex;          /* Display when menu is clicked */
+    display: flex;         
   }
 
   .links-list {
