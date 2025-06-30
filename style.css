@@ -1,6 +1,5 @@
 * {
     margin: 0;
-    padding: 10px;
     box-sizing: border-box;
     font-family: Arial, sans-serif;
     overflow-x:hidden;
@@ -227,81 +226,143 @@ div .healthy-aging,
   left: 90.4px;
   top: 25px;
 }
-
-.almased-energy {
+/*.almased-energy {
   display: flex;
-  margin-top: 50px;
-  color: #439333;
-  padding: 0;
-  gap: 0; /* Kjo heq hapësirën mes dy div-ëve */
+  justify-content: center;
+  align-items: center;
+  margin: -10px;
+  color: rgba(85, 171, 38, 1);
+  font-family: "Times New Roman", Times, serif;
+ 
 }
 
 .energy-text {
-  background-color: rgba(213, 231, 185, 1);
-  flex: 1;
-  display: flex;
-  flex-direction: column;
-  padding: 2rem;
+  font-size: 20px;
+  line-height: 1.5;
+  background-color: #d5e7b9;
+  padding: 20px;
   text-align: center;
-  position: relative;
-}
 
+}
 .energy-text h2 {
-  font-size: 2.8rem; /* më i madh */
-  line-height: 1.3;
-  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-  margin-bottom: 0.5rem;
-}
 
-.energy-text .author {
-  font-style: italic;
-  font-size: 1rem;
-  margin-bottom: 2rem;
+  width: 507.28px;
+  height: 353.7px;
+  top: 2245.14px;
+  left: 1664.83px;
+font-family: Miller Display;
+font-weight: 300;
+font-size: 62.05px;
+line-height: 100%;
+letter-spacing: 0%;
 }
+.author{
+width: 363px;
+height: 48px;
+top: 2490px;
+left: 1670.11px;
+font-family: Jost;
+font-weight: 400;
+font-size: 28.82px;
+line-height: 100%;
+letter-spacing: 0%;
+overflow: hidden;
 
-.story-center {
-  flex-grow: 1;
-  display: flex;
-  align-items: center;
-  justify-content: center;
 }
 
 .story-btn {
-  padding: 12px 24px;
-  background-color: rgba(85, 171, 38, 1);
-  color: white;
-  border: none;
-  border-radius: 25px;
-  font-weight: bold;
-  font-size: 1rem;
-  cursor: pointer;
-  width: 50%;
-  position: relative;
+background-color: rgba(85,171,38,255);
+color: white;
+width: 385;
+height: 76;
+top: 2556px;
+left: 1670.11px;
+border-radius: 40px;
+
 }
 
-.arrows {
-  position: absolute;
-  bottom: 1.5rem;
-  left: 2rem;
+
+
+.arrows{
+  left: 7000px;
+}
+
+
+*/
+
+.almased-energy{
   display: flex;
-  gap: 1.5rem;
-  font-size: 1.5rem;
-}
-
-.energy-image {
-  flex: 1;
-}
-
-.energy-img {
+  flex-direction: row;
   width: 100%;
-  height: 100%;
-  object-fit: cover;
-  display: block;
+  min-height: 600px;          
+  color: #55ab26;
+  font-family: "Times New Roman", Times, serif;
+  padding-top: 60px;
+  overflow: hidden;
+}
+
+.energy-text,
+.energy-image{
+  flex: 1  50%;
+  margin: -5px;            
+  padding: 0;             
+}
+
+.energy-text{
+  background:#d5e7b9;
+  padding:2.5rem;
+  position: relative;
+  text-align:center;
+}
+.energy-image{              
+  display:flex;
+}
+.energy-img{
+  width:100%;
+  height:100%;
 }
 
 
+.energy-text h2{
+  font-family:"Miller Display",serif;
+  font-size:3.2rem;         
+  line-height:1.05;
+  margin-bottom:1.5rem;
+  overflow: hidden;
+
+}
+.author{
+  font-family:"Jost",sans-serif;
+  font-size:1.8rem;          
+  margin-bottom:2rem;
+   position: absolute;
+  left: 90px;
+}
 
 
+.story-btn{
+  background:#55ab26;
+  color:#fff;
+  padding:1rem 2.5rem;
+  border:none;
+  border-radius:40px;
+  font-weight:bold;
+  font-size:1rem;
+  margin-bottom:2.5rem;
+  position: absolute;
+  top: 300px;
+  left: 200px;
+ 
+}
+
+
+.arrows{
+  bottom:1.5rem;
+  font-size:1.8rem;
+  color:#55ab26;
+  left: 70px;
+  position: absolute;
+}
 
 
 
