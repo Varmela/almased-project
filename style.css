@@ -483,7 +483,7 @@ border-radius: 10px;
 }
 
 .card-content h4 {
-  font-size: 20px;
+font-size: 20px;
 margin:0 0 6px;}
 
 .card-content p {
@@ -753,8 +753,8 @@ overflow: hidden;
 }
 
 .photo1{
- width: 693.1986694335938px;
-height: 698.6641235351562px;
+ width: 693px;
+height: 698px;
 top: 875.13px;
 left: 66px;
 opacity: 1;
@@ -783,8 +783,8 @@ overflow: hidden;
 
 }
 .ntr-text{
-width: 348.8766174316406px;
-height: 204.04270935058594px;
+width: 348px;
+height: 204px;
 top: 913.39px;
 left: 819.32px;
 opacity: 1;
@@ -842,6 +842,31 @@ font-weight: 300;
 font-style: Light;
 font-size: 45.92px;
 letter-spacing: 0%;
+
+}
+
+.delicious-text{
+width: 1139px;
+height: 115px;
+top: 111px;
+left: 186px;
+opacity: 1;
+font-family: Helvetica Neue LT Std;
+font-weight: 300;
+font-style: 45 Light;
+font-size: 50px;
+line-height: 100%;
+letter-spacing: 0%;
+text-align: center;
+color: #238014;
+
+
+}
+.delicious-section{
+width: 1525px;
+height: 10411px;
+opacity: 1;
+background: #FFFFFF;
 
 }
 
