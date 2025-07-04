@@ -18,18 +18,47 @@ document.addEventListener('DOMContentLoaded', () => {
   });
 });
 
-const swiper = new Swiper('.swiper', {
-  // Optional parameters
+new Swiper('.energy-swiper', {
   direction: 'horizontal',
   loop: true,
-
-
-
-  // Navigation arrows
   navigation: {
-    nextEl: '.swiper-button-next',
-    prevEl: '.swiper-button-prev',
-  },
-
-  
+    nextEl: '.energy-swiper .swiper-button-next',
+    prevEl: '.energy-swiper .swiper-button-prev'
+  }
 });
+
+
+
+document.addEventListener('DOMContentLoaded', () => {
+  // Instantiate Glide only if the carousel exists on the page
+  const glideRoot = document.querySelector('.benefits-glide');
+  if (!glideRoot || typeof Glide === 'undefined') return;
+
+  new Glide(glideRoot, {
+    type: 'carousel',
+    perView: 3,
+    gap: 0,
+    margin: 0,
+    breakpoints: {
+      1024: { perView: 2 },
+      600:  { perView: 1 }
+    }
+  }).mount();
+});
+
+
+
+// info-swiper.js
+document.addEventListener('DOMContentLoaded', () => {
+  new Swiper('.info-swiper', {
+    slidesPerView: 1,
+    navigation: {
+      nextEl: '.info-next',
+      prevEl: '.info-prev'
+    }
+  });
+});
+
+
+
+

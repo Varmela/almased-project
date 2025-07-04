@@ -6,13 +6,18 @@
   <title>Almased</title>
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
   <link rel="stylesheet" href="style.css">
+ 
 <link
   rel="stylesheet"
   href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
 />
 
 <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
-
+ <script src="https://cdn.jsdelivr.net/npm/@glidejs/glide/dist/glide.min.js"></script>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@glidejs/glide/dist/css/glide.core.min.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@glidejs/glide/dist/css/glide.theme.min.css">
+  <script src="https://cdn.jsdelivr.net/npm/@glidejs/glide/dist/glide.min.js"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
 </head>
 <body>
   <header class="header-style">
@@ -136,6 +141,7 @@
     
   </div>
 </section>
+
 <div class="swiper energy-swiper">
   <div class="swiper-wrapper">
 
@@ -172,11 +178,221 @@
   </div>
 
   
-  <div class="swiper-button-prev"><i class="bi bi-arrow-left"></i></div>
-  <div class="swiper-button-next"><i class="bi bi-arrow-right"></i></div>
+ <div class="swiper-button-prev"><i class="bi bi-arrow-left"></i></div>
+<div class="swiper-button-next"><i class="bi bi-arrow-right"></i></div>
+
+
+<section class="daily-health">
+  <div class="daily-health-text">
+    <h2>Discover our daily health benefits</h2>
+    </div>
+
+<div class="glide benefits-glide">
+
+  <!-- Slides wrapper -->
+  <div class="glide__track" data-glide-el="track">
+    <ul class=" glide__slides">
+
+      <!-- ===== Card 1 ===== -->
+      <li class="glide__slide">
+        <div class="benefit-card">
+          <div class="card-image-wrapper">
+            <img src="tenis.png" alt="Weight Loss" class="carousel-image">
+            <button class="plus-btn">+</button>
+          </div>
+          <div class="card-content">
+            <h4>Weight Loss</h4>
+            <p>Almased is a natural meal replacement that helps you cut calories while staying nourished.</p>
+          </div>
+        </div>
+      </li>
+
+      <!-- ===== Card 2 ===== -->
+      <li class="glide__slide">
+        <div class="benefit-card">
+          <div class="card-image-wrapper">
+            <img src="woman.png" alt="Muscle Gain" class="carousel-image">
+            <button class="plus-btn">+</button>
+          </div>
+          <div class="card-content">
+            <h4>Muscle Gain</h4>
+            <p>High‑protein nutrition that supplies the amino acids needed for muscle repair and growth.</p>
+          </div>
+        </div>
+      </li>
+
+      <!-- ===== Card 3 ===== -->
+      <li class="glide__slide">
+        <div class="benefit-card">
+          <div class="card-image-wrapper">
+            <img src="women2.png" alt="Healthy Aging" class="carousel-image">
+            <button class="plus-btn">+</button>
+          </div>
+          <div class="card-content">
+            <h4>Healthy Aging</h4>
+            <p>Rich in antioxidants and nutrients that fight inflammation and oxidative stress.</p>
+          </div>
+        </div>
+      </li>
+
+      <!-- ===== Card 4 ===== -->
+      <li class="glide__slide">
+        <div class="benefit-card">
+          <div class="card-image-wrapper">
+            <img src="women3.png" alt="Daily Nutrition" class="carousel-image">
+            <button class="plus-btn">+</button>
+          </div>
+          <div class="card-content">
+            <h4>Daily Nutrition</h4>
+            <p>A complete meal replacement that covers all your daily nutritional needs.</p>
+          </div>
+        </div>
+      </li>
+
+      <!-- add more <li class="glide__slide"> … </li> if you wish -->
+    </ul>
+  </div>
+
+  <!--  Left / right arrows (bottom‑right) -->
+  <div class="glide__arrows" data-glide-el="controls">
+    <button class="glide__arrow glide__arrow--left" data-glide-dir="<">
+      <i class="bi bi-arrow-left"></i>
+    </button>
+    <button class="glide__arrow glide__arrow--right" data-glide-dir=">">
+      <i class="bi bi-arrow-right"></i>
+    </button>
+  </div>
 </div>
 
 
+
+</section>
+
+
+
+<section class="metabolic-boost">
+  <div class="metabolic-text">
+    <p>The Global Leader in Metabolic Health</p>
+   
+  </div>
+ 
+<div class="studies">
+  <div class="circle">
+<div class="research-studies">
+<h3>100%</h3></br>
+<p>muscle mass preservation</p>
+
+</div>
+<div class="research-studies">
+  <h3>113%</h3></br>
+  <p>more weight loss than a low-fat diet</p>
+
+
+</div>
+<div class="research-studies">
+<h3>86%</h3></br>
+<p>more fat loss</p>
+
+</div>
+<div class="research-studies">
+<h3>258%</h3></br>
+<p>more waist reductio</p>
+
+</div>
+  </div>
+  <p style="font-size: 20px;">No other compares to Almased. From balanced blood to a better metabolism,</br> Almased
+  has been shown in peer-reiewed studies to have numerous health benefits.</p>
+<button class="studies-btn">See our research studies <i class="bi bi-arrow-right"></i></button>
+
+</div>
+
+</section>
+<section class="university-section">
+  <div class="university-section-text">
+    <p class="uni-txt">Proven Results 32 University backed Studies on Almased</p>
+
+  </div>
+<div class="university-section-images">
+  <img src="uni1.png" alt="University 1" class="uni-image">
+  <img src="uni2.png" alt="University 2" class="uni-image">
+  <img src="uni3.png" alt="University 3" class="uni-image">
+  <img src="uni4.png" alt="University 4" class="uni-image">
+  <img src="uni5.png" alt="University 5" class="uni-image">
+  <img src="uni6.png" alt="University 6" class="uni-image">
+</div>
+</section>
+<section class="information-section">
+  <div class="info-text">
+     <div class="information-image">
+    <img src="doctor.png" alt="Information Image" class="doctor-image">
+  </div>
+  <div class="information-text">
+    <p>If you are on GLP-1s, its important </br>to supplement with Almased so you </br> maintain muscle while still both </br> losing weight and losing fat.</p>
+<img class="firma" src="firma.png" alt="firma">
+    <p class="doctor-name">Dr Eric J Rosenbaum</p>
+    <p class="doctor-title">Dr Aloys Berg</p>
+  </div>
+
+
+  </div>
+  <div class="protein1-text">
+    <p>The Natural Health & Weight loss protein shake</p>
+  </div>
+ 
+  <div class="protein-gr">
+
+ 
+
+<div class="protein-description">
+  <h3 style="color: #50a325; font-size: 50px; margin: 40px;">Beyond a protein </br> shake, It's healing </br> from within</h3>
+  <p style="font-size: 25px;">Almased's powerful naturally occurring  </br> bioactive peptides improve your health,  </br> energy,immunity its the best daily nutrients</p>
+ 
+  <p style="color: #4e993b; font-size: 30px; margin: 50px;"> <img src="prt.png" alt="protein" class="protein2-img"> Helps unclog fat from the liver</p>
+
+</div>
+<div class="protein-image">
+  <img src="plant.png" alt="Protein Image" class="protein-img">
+</div>
+
+
+  </div>
+  <div class="protein2-gr">
+    <div class="photo">
+    <img src="photo1.png" alt="photo1" class="photo1">
+    </div>
+
+
+    <div class="naturale">
+      <p class="ntr-text">Made From Natural Ingredients</p>
+      <div class="info">
+        <p class="plus">+</p>
+        <p class="number">80</p>
+        <p class="desc">Bioactive Peptites</p>
+      </div>
+
+      <div class="info">
+        <p class="plus">+</p>
+        <p class="number">20</p>
+        <p class="desc">Amino Acides</p>
+      </div>
+
+      <div class="info">
+         <p class="plus">+</p>
+        <p class="number">22</p>
+        <p class="desc">Vitamins & Minerals</p>
+      </div>
+    </div>
+  </div>
+ 
+
+
+
+
+
+
+
+
+</section>
   <script src="script.js"></script>
 </body>
 </html>
