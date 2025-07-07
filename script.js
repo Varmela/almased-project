@@ -17,7 +17,9 @@ document.addEventListener('DOMContentLoaded', () => {
     }
   });
 });
-/* wrap ALL Swiper inits in one DOMContentLoaded */
+
+
+/*  ALL Swiper inits in one DOMContentLoaded */
 document.addEventListener('DOMContentLoaded', () => {
 
   new Swiper('.energy-swiper', {
