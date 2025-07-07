@@ -17,15 +17,28 @@ document.addEventListener('DOMContentLoaded', () => {
     }
   });
 });
+/* wrap ALL Swiper inits in one DOMContentLoaded */
+document.addEventListener('DOMContentLoaded', () => {
 
-new Swiper('.energy-swiper', {
-  direction: 'horizontal',
-  loop: true,
-  navigation: {
-    nextEl: '.energy-swiper .swiper-button-next',
-    prevEl: '.energy-swiper .swiper-button-prev'
-  }
+  new Swiper('.energy-swiper', {
+    direction:'horizontal',
+    loop:true,
+    navigation:{
+      prevEl:'.energy-swiper .swiper-button-prev',
+      nextEl:'.energy-swiper .swiper-button-next'
+    }
+  });
+
+  new Swiper('.hero-swiper', {
+    effect:'fade',
+    loop:true,
+    autoplay:{ delay:4000, disableOnInteraction:false },
+    speed:800
+  });
+
 });
+
+
 
 
 
@@ -48,7 +61,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
 
 
-// info-swiper.js
+// Initialize Swiper for the info section
 document.addEventListener('DOMContentLoaded', () => {
   new Swiper('.info-swiper', {
     slidesPerView: 1,
