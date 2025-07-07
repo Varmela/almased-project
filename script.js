@@ -36,6 +36,15 @@ document.addEventListener('DOMContentLoaded', () => {
     speed:800
   });
 
+   new Swiper('.info-swiper', {
+    slidesPerView : 1,
+    loop          : true,  
+    navigation    : {
+    nextEl : '.swiper-button-next2',  
+    prevEl : '.swiper-button-prev2'   
+    }
+  });
+
 });
 
 
@@ -59,22 +68,3 @@ document.addEventListener('DOMContentLoaded', () => {
   }).mount();
 });
 
-
-
-
-
-
-
-
-document.addEventListener('DOMContentLoaded', () => {
-  /* … other Swipers … */
-
-  new Swiper('.info-swiper', {
-    slidesPerView : 1,
-    loop          : true,   // set true if you want endless scrolling
-    navigation    : {
-    nextEl : '.swiper-button-next2',  
-    prevEl : '.swiper-button-prev2'   
-    }
-  });
-});
