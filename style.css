@@ -722,11 +722,19 @@ margin:0 0 6px;}
 
 .information-section{
   width: 1510px;
-  height: 1856px;
+  height: 2356px;
   top:5089px;
   left: 1526px;
-  background-color: #F1E8E6;
+  background-color: white;
 }
+
+.info-swiper { position: relative; }
+
+
+
+
+
+
 .info-text{
   display: flex;
   flex-direction: row;
@@ -735,6 +743,7 @@ margin:0 0 6px;}
   gap: 20px;
   padding: 20px;
   height:594px;
+  background-color: #F1E8E6;
 
 }
 .doctor-image{
@@ -750,6 +759,7 @@ margin:0 0 6px;}
   font-weight: 300;
   font-size: 25px;
   letter-spacing: 0%;
+  margin-left: 40px;
 
 }
 .firma{
@@ -782,24 +792,32 @@ font-size: 25px;
 letter-spacing: 2%;
 color: #55AB26;
 text-align: right;
+margin-top: -25px;
 }
 
-
-
-
-.info-swiper{ position:relative; }
-
-.info-prev, .info-next{
+.swiper-button-prev2,
+.swiper-button-next2{
   position:absolute;
   top:50%;
   transform:translateY(-50%);
+
   font-size:2rem;
   color:#55ab26;
   cursor:pointer;
   z-index:10;
+  width:58px;
+  height:58px;
+  border:1.3px solid #55ab26;
+  border-radius:20px;
+  background:#F1E8E6;
 }
-.info-prev{ left:0; }
-.info-next{ right:0; }
+.swiper-button-prev2{ left:48px; }
+.swiper-button-next2{ right:48px; }
+
+
+
+
+
 
 
 
@@ -813,18 +831,20 @@ text-align: right;
 }
 
 .protein1-text{
-  color: #238014;
+color: #238014;
 width: 1343px;
-height: 115px;
+height: 100px;
 top: 74px;
 left: 84.67px;
 opacity: 1;
 font-family: Helvetica Neue LT Std;
 font-weight: 300;
 font-style: 45 Light;
-font-size: 60px;
+font-size: 40px;
 letter-spacing: 0%;
 text-align: center;
+margin-left: 10px;
+overflow: hidden;
 
 
 }
@@ -901,6 +921,8 @@ overflow: hidden;
 
 .info{
   display: flex;
+  margin-top: -15px;
+
 }
 
 
@@ -915,12 +937,13 @@ overflow: hidden;
   font-size:80px;         
   line-height:10px;
   color:#55ab26;
-  margin:10px;            
+  margin:10px;   
+  margin-left: 50px;         
 }
 
 
 .number{
-  width: 263.4px;
+width: 263.4px;
 height: 175.6px;
 top: 1090.1px;
 left: 934.09px;
@@ -930,10 +953,13 @@ font-weight: 250;
 font-style: 35 Thin;
 font-size: 129.01px;
 letter-spacing: 0%;
+margin-left: 50px;
+margin-top: -5px;
+
 
 }
 .desc{
-  width: 313.6130065917969px;
+width: 313.6130065917969px;
 height: 185.4615020751953px;
 top: 1103.99px;
 left: 1108.94px;
@@ -943,6 +969,7 @@ font-weight: 300;
 font-style: Light;
 font-size: 45.92px;
 letter-spacing: 0%;
+margin-right: 60px;
 
 }
 
@@ -960,12 +987,15 @@ line-height: 100%;
 letter-spacing: 0%;
 text-align: center;
 color: #238014;
+margin-left: 70px;
+overflow: hidden;
+
 
 
 }
 .delicious-section{
 width: 1525px;
-height: 1311px;
+height: 1111px;
 opacity: 1;
 background: #f1e8e6;
 
@@ -978,17 +1008,20 @@ background: #f1e8e6;
   align-items: center;  
   gap: 20px;
   padding: 20px;
+  margin-top: 50px;
+ 
+
 }
 .delicious-image{
 width: 400px;
-height: 545px;
+height: 745px;
 top: 289px;
 left: 139px;
 opacity: 1;
 border-radius: 20px;
 }
 .delicious-desc{
-  width: 400px;
+width: 400px;
 height: 141px;
 top: -961px;
 left: 139px;
@@ -996,15 +1029,17 @@ opacity: 1;
 border-bottom-right-radius: 20px;
 border-bottom-left-radius: 20px;
 background: #55AB26;
- font-family: Jost;
+font-family: Jost;
 font-weight: 400;
 font-style: Regular;
 font-size: 28.82px;
-line-height: 100%;
 letter-spacing: 0%;
 color: white;
+text-align: center;
 
-
+}
+.del{
+margin-top: -20px;
 }
 .available{
 width: 1208px;

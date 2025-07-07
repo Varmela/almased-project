@@ -61,17 +61,20 @@ document.addEventListener('DOMContentLoaded', () => {
 
 
 
-// Initialize Swiper for the info section
+
+
+
+
+
 document.addEventListener('DOMContentLoaded', () => {
+  /* … other Swipers … */
+
   new Swiper('.info-swiper', {
-    slidesPerView: 1,
-    navigation: {
-      nextEl: '.info-next',
-      prevEl: '.info-prev'
+    slidesPerView : 1,
+    loop          : true,   // set true if you want endless scrolling
+    navigation    : {
+    nextEl : '.swiper-button-next2',  
+    prevEl : '.swiper-button-prev2'   
     }
   });
 });
-
-
-
-
