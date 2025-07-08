@@ -31,14 +31,16 @@ document.addEventListener('DOMContentLoaded', () => {
     }
   });
 
-  new Swiper('.hero-swiper', {
-    effect:'fade',
-    loop:true,
-    autoplay:{ delay:4000, disableOnInteraction:false },
-    speed:800
-  });
+ new Glide('.hero-glide', {
+  type: 'carousel',
+  autoplay: 4000,
+  animationDuration: 800,
+  perView: 1,
+  gap: 0
+}).mount();
 
-   new Swiper('.info-swiper', {
+
+ /*  new Swiper('.info-swiper', {
     slidesPerView : 1,
     loop          : true,  
     navigation    : {
@@ -46,7 +48,7 @@ document.addEventListener('DOMContentLoaded', () => {
     prevEl : '.swiper-button-prev2'   
     }
   });
-
+*/
 });
 
 
