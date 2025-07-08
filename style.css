@@ -79,7 +79,8 @@
   height: 750px;      
   width: 100%;
   overflow: hidden;
-  
+
+
 }
 
 .banner-image {
@@ -177,6 +178,8 @@ div .protein, .peptides, .acides, .vitamins, p{
   height:100%;
   z-index:1;         
   overflow: hidden;  
+  
+
 }
 
 .hero-glide .glide__slide img {
@@ -191,47 +194,79 @@ div .protein, .peptides, .acides, .vitamins, p{
 
 .health-goals {
   display: flex;
+  flex-wrap: wrap;
   justify-content: center;
-  align-items: center;
   gap: 20px;
-  margin-top: 5px;
+  padding: 40px 20px;
 }
 
-div .healthy-aging,
-.muscle-gain,
-.muscle-preservation,
-.weight-loss,
- .daily-nutrition,
- .healthy-aging {
-  width: 300px; 
-  height: 100px; 
+.goal-card {
+  width: 250px;
+  height: 100px;
+  border: 1px solid gray;
   border-radius: 20px;
-  border: 4px solid rgba(85,171,38,255);
-  text-align: center;
-  font-size: 10px;
-  padding: 5px;
-  box-sizing: border-box;
-  transition: rgba(85,171,38,255)  0.3s ease;
-  color: rgba(85,171,38,255);
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  color: rgba(85, 171, 38, 1);
+  transition: background-color 0.3s ease;
+  cursor: pointer;
+  padding: 0 20px;
+}
 
-   }
-
-.healthy-aging:hover,
-.muscle-gain:hover,
-.muscle-preservation:hover,
-.weight-loss:hover,
-.daily-nutrition:hover {
-  background-color: rgba(85, 171, 38, 1); /* ose #55ab26 */
+.goal-card:hover {
+  background-color: rgba(85, 171, 38, 1);
   color: white;
 }
 
+
+.goal-card5 {
+  width: 250px;
+  height: 100px;
+  border: 1px solid gray;
+  border-radius: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  color: black;
+  transition: background-color 0.3s ease;
+  cursor: pointer;
+  padding: 0 20px;
+  background-color: #f8f3f2;
+}
+
+.goal-card5:hover {
+  background-color: rgba(85, 171, 38, 1);
+  color: white;
+}
+
+
+
+.goal-line {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 10px;
+  font-size: 18px;
+  margin: 0;
+}
+
+.goal-icon {
+  font-size: 24px;
+  font-weight: bold;
+}
+
+.goal-text {
+  font-size: 16px;
+  white-space: nowrap;
+}
 
 .almased-pack {
   display: flex;
   justify-content: center;
   align-items: center;
   gap: 0px;
-  margin-top: 200px;
+  margin-top: 100px;
   background-color:#f8f3f2 ;
   color:rgba(85, 171, 38, 1) ;
   margin-left: 120px;
@@ -241,6 +276,12 @@ div .healthy-aging,
   height:675px;
   padding: 10px;
   
+}
+.welcome-text {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 10px;
 }
 .shopNow-btn {
   padding: 10px 20px;
@@ -252,13 +293,15 @@ div .healthy-aging,
   cursor: pointer;
   left:90%;
   margin-top: 45px;
+  width:150px;
+  margin-left: 100px;
 }
 
 .almased-benefits {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  gap: 40px;
+  gap: 20px;
   padding: 40px 20px;
 
   color: #55ab26;
@@ -1383,21 +1426,26 @@ margin-top: 200px;
      font-size: 14px;
   }
  
-  .health-goals{
-    flex-wrap: wrap;              /* lejo thyerjen */
-    gap: 16px;
+ .health-goals {
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
   }
-  /* secili “kuti” zë rreth 45 % → 2 për rresht */
-  .health-goals > .daily-nutrition,
-  .health-goals > .weight-loss,
-  .health-goals > .muscle-preservation,
-  .health-goals > .muscle-gain,
-  .health-goals > .healthy-aging{
-    flex: 1 1 45%;
-    max-width: 45%;
-    height: 90px;
-    font-size: 18px;
-    overflow: hidden;
+
+  .goal-card {
+    width: 90%;
+  }
+
+  .goal-line {
+    font-size: 16px;
+  }
+
+  .goal-icon {
+    font-size: 20px;
+  }
+
+  .goal-text {
+    font-size: 15px;
   }
 
    .almased-pack{
@@ -1413,11 +1461,11 @@ margin-top: 200px;
   .welcome-image { grid-column: 1 / -1; display: flex; justify-content: center; gap: 1rem; }
 
   .welcome-image img{
-    position: initial;              /* hiq left/top relative */
+    position: initial;            
     width: 28vw; max-width: 200px; height: auto;
   }
 
-  /*  BENEFITS  – 2 kuti për rresht             */
+   
   .almased-benefits{
     flex-wrap: wrap;
     gap: 2rem;
@@ -1428,9 +1476,10 @@ margin-top: 200px;
     max-width: calc(50% - 2rem);
     text-align: center;
   }
+
    .benefit-item {
     width: 100%;
-    max-width: 320px;
+    max-width: 220px;
   }
   .almased-energy{
     flex-direction: column;
