@@ -173,7 +173,7 @@ div .protein, .peptides, .acides, .vitamins, p{
 .hero-glide{
   position: absolute;
   top:0; 
-  left:0;
+  left:-10px;
   width:100%; 
   height:100%;
   z-index:1;         
@@ -187,6 +187,9 @@ div .protein, .peptides, .acides, .vitamins, p{
   height: 750px;
   object-fit: cover;
   overflow: hidden;
+  margin: 0px;
+  padding: 0;
+  list-style: none;
 }
 
 
@@ -564,7 +567,7 @@ border-radius: 40px;
 }*/
 
 .glide__slides{
-  gap:30px;
+  gap:0px;
 }   
 
 .carousel-benefits {
@@ -736,40 +739,39 @@ margin:0 0 6px;}
   font-size: 16px;
   margin-top: 20px;
 }
-
-.university-section{
-  width: 1515px;
-  height:286px;
-  top: 4800px;
-  left: 1526px;
+.university-section {
+  width: 100%;
   background-color: #F9F175;
-
+  padding: 40px 20px;
+  box-sizing: border-box;
+  overflow-x: auto;
 }
 
-.uni-txt{
-  width: 1335px;
-  height:54px;
-  top:4872px;
-  left: 1600px;
+.uni-txt {
+  max-width: 1335px;
+  margin: 0 auto 20px;
   color: #238014;
   text-align: center;
   font-family: Jost, sans-serif;
   font-size: 40px;
-  font-weight: 400px;
-  overflow: hidden;
+  font-weight: 400;
+  padding: 0 10px;
 }
-.university-section-images{
-  width:1300.9px;
-  height:134px;
-  top: 5000px;
-  left: 1640px;
+
+.university-section-images {
   display: flex;
   justify-content: center;
   align-items: center;
   gap: 20px;
-  overflow: hidden;
-  margin:30px;
-  
+  flex-wrap: nowrap;             /* mbaj të gjitha në një rresht */
+  overflow-x: auto;              /* scroll horizontal në mobile */
+  padding-bottom: 10px;
+}
+
+.uni-image {
+  height: 70px;
+  width: 200px;
+  flex-shrink: 0;                /* mos lejo ngjeshje në mobile */
 }
 
 .information-section{
@@ -1489,17 +1491,13 @@ margin-left: 60px;
   .footer-logo {
     margin-bottom: 20px;
   }
-  .uni-txt {
-    font-size: 24px;
-  }
 
-  .uni-image {
-    height: 45px;
-  }
-
-  .university-section {
-    padding: 30px 10px;
-  }
+   .uni-txt      { font-size:30px; }
+   .university-section-images{
+    display: flex;
+    flex-direction: column;
+   }
+  .uni-image    { height:30px; }
   .available-images {
     gap: 15px;
   }
@@ -1609,6 +1607,14 @@ margin-left: 60px;
   .available1-img      { max-width: 220px; height: 70px; }
   .store               { padding:10px 32px; }
 
+
+
+
+
+
+
+
+
 }
 
 
@@ -1647,3 +1653,4 @@ margin-left: 60px;
   cursor: pointer;
   z-index: 20;            /* mbi foto dhe tekst */
 }
+
