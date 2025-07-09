@@ -1349,7 +1349,7 @@ margin-left: 60px;
     gap: 20px;
     overflow: hidden;
   }
-  .optimal-food{ font-size: 36px; }
+  .optimal-food{ font-size: 26px; text-align: left; }
   .optimal-food p{ font-size: 18px; }
 
   .hero-text .protein,
@@ -1367,8 +1367,8 @@ margin-left: 60px;
   .almased-button{
     margin-left: 105px;
     height: 50px;
-     width: 120px;
-     font-size: 14px;
+    width: 120px;
+    font-size: 14px;
   }
  
  .health-goals {
