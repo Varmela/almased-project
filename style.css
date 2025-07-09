@@ -114,13 +114,16 @@
 
 
 .optimal-food {
-  font-size: 50px;
+  font-size: 40px;
   line-height: 1.2;
+  width:400px;
+  
 }
 
 .optimal-food p {
   font-size: 20px;
   font-weight: normal;
+  margin-right: 70px;
 }
 
 .almased-button {
@@ -137,7 +140,7 @@
   width: 250px;
   font-size: 16px;
   z-index: 2;
-  margin-left: 40px;
+  margin-left: 55px;
 }
 
 
