@@ -26,9 +26,10 @@ document.addEventListener('DOMContentLoaded', () => {
   new Swiper('.energy-swiper', {
     direction:'horizontal',
     loop:true,
-    navigation:{
-      prevEl:'.bi-arrow-right',
-      nextEl:' .bi-arrow-left'
+   navigation: {
+  nextEl: '.swiper-button-next1',
+  prevEl: '.swiper-button-prev1'
+ 
     },
   });
 
@@ -45,8 +46,8 @@ document.addEventListener('DOMContentLoaded', () => {
     slidesPerView : 1,
     loop          : true,  
     navigation    : {
-    nextEl : '.swiper-button-next2',  
-    prevEl : '.swiper-button-prev2'   
+    nextEl : '.swiper-button-prev2',  
+    prevEl : '.swiper-button-next2'   
     },
   });
 

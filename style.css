@@ -523,8 +523,8 @@ border-radius: 40px;
   margin-left: 150px;
 }
 
-.energy-arrows .bi-arrow-left,
-.energy-arrows .bi-arrow-right {
+.energy-arrows .swiper-button-prev2,
+.energy-arrows .swiper-button-next2 {
   width: 48px;
   height: 48px;
   color: #55ab26;
@@ -785,13 +785,23 @@ margin:0 0 6px;}
   background-color: white;
 }
 
-.info-swiper { position: relative; }
+.info-swiper {
+   position: relative; 
+width: 100%;
+  max-width: 100%;
+  overflow: hidden;
+}
 
 
 
+.swiper-wrapper {
+  display: flex;
+}
 
-
-
+.swiper-slide {
+  flex-shrink: 0;
+  width: 100%;
+}
 .info-text{
   display: flex;
   flex-direction: row;
@@ -1349,7 +1359,7 @@ margin-left: 60px;
     gap: 20px;
     overflow: hidden;
   }
-  .optimal-food{ font-size: 26px; text-align: left; }
+  .optimal-food{ font-size: 36px; text-align: left; }
   .optimal-food p{ font-size: 18px; }
 
   .hero-text .protein,
@@ -1439,12 +1449,12 @@ margin-left: 60px;
     padding: 2rem 1.5rem;
   }
   .author{ font-size: 1rem; }
-  .energy-swiper .swiper-button-prev,
-  .energy-swiper .swiper-button-next{
+  .energy-swiper .swiper-button-prev1,
+  .energy-swiper .swiper-button-next1{
     bottom: 1rem;
     left: 1rem;
   }
-  .energy-swiper .swiper-button-next{
+  .energy-swiper .swiper-button-next1{
     left: 4.5rem;
   }
     .research-studies {
