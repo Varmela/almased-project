@@ -1,3 +1,4 @@
+
 document.addEventListener('DOMContentLoaded', () => {
   const toggleButton = document.querySelector('.menu-toggle');
   const LinksList  = document.querySelector('.links');
@@ -26,9 +27,9 @@ document.addEventListener('DOMContentLoaded', () => {
     direction:'horizontal',
     loop:true,
     navigation:{
-      prevEl:'.bi-arrow-left',
-      nextEl:' .bi-arrow-right'
-    }
+      prevEl:'.bi-arrow-right',
+      nextEl:' .bi-arrow-left'
+    },
   });
 
  new Glide('.hero-glide', {
@@ -46,7 +47,7 @@ document.addEventListener('DOMContentLoaded', () => {
     navigation    : {
     nextEl : '.swiper-button-next2',  
     prevEl : '.swiper-button-prev2'   
-    }
+    },
   });
 
 });

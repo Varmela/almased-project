@@ -99,7 +99,7 @@
   transform: translateY(-50%); 
   width: 100%;
   display: flex;
- flex-direction: row;
+  flex-direction: row;
   justify-content: space-between; 
   align-items: center;
   text-align: center;
@@ -1186,7 +1186,7 @@ margin-left: 60px;
   flex-direction: column;
   text-align: left;
   justify-content: flex-start;
-  margin-right: 300px;
+  margin-right: 100px;
 }
 
 .newsletter-text-p {
@@ -1218,7 +1218,7 @@ margin-left: 60px;
 .email-input {
   flex: 1;
   min-width: 250px;
-  max-width: 600px;
+  max-width: 750px;
   height: 56px;
   padding: 0 20px;
   border-radius: 100px;
@@ -1643,6 +1643,8 @@ margin-left: 60px;
     width: 36px;
     height: 36px;
     font-size: 0.5rem;
+    display: flex;
+    flex-direction: column;
   }
 
   .swiper-button-prev2 {
@@ -1650,7 +1652,8 @@ margin-left: 60px;
   }
 
   .swiper-button-next2 {
-    right: 20%;
+    left: 20%;
+
   }
 
 .protein1-text{
