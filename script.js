@@ -23,15 +23,7 @@ document.addEventListener('DOMContentLoaded', () => {
 /*  ALL Swiper inits in one DOMContentLoaded */
 document.addEventListener('DOMContentLoaded', () => {
 
-  new Swiper('.energy-swiper', {
-    direction:'horizontal',
-    loop:true,
-   navigation: {
-  nextEl: '.swiper-button-next1',
-  prevEl: '.swiper-button-prev1'
- 
-    },
-  });
+
 
  new Glide('.hero-glide', {
   type: 'carousel',
@@ -41,36 +33,42 @@ document.addEventListener('DOMContentLoaded', () => {
   gap: 0
 }).mount();
 
-
-  new Swiper('.info-swiper', {
-    slidesPerView : 1,
-    loop          : true,  
-    navigation    : {
-    nextEl : '.swiper-button-prev2',  
-    prevEl : '.swiper-button-next2'   
-    },
-  });
-
 });
-
-
-
-
-
 document.addEventListener('DOMContentLoaded', () => {
-  // Instantiate Glide only if the carousel exists on the page
-  const glideRoot = document.querySelector('.benefits-glide');
-  if (!glideRoot || typeof Glide === 'undefined') return;
 
-  new Glide(glideRoot, {
-    type: 'carousel',
-    perView: 3,
-    gap: 0,
-    margin: 0,
-    breakpoints: {
-      1024: { perView: 2 },
-      600:  { perView: 1 }
-    }
-  }).mount();
+  /* ============  BENEFITS  ============ */
+  const benefitsGlideRoot = document.querySelector('.benefits-glide');
+  if (benefitsGlideRoot && typeof Glide !== 'undefined') {
+    new Glide(benefitsGlideRoot, {
+      type: 'carousel',
+      perView: 3,
+      gap: 0,
+      breakpoints: {
+        1024: { perView: 2 },
+        600 : { perView: 1 }
+      }
+    }).mount();
+  }
+
+  /* ============  INFO (doctor)  ============ */
+  const infoGlideRoot = document.querySelector('.info-glide');   // class e re
+  if (infoGlideRoot && typeof Glide !== 'undefined') {
+    new Glide(infoGlideRoot, {
+      type   : 'carousel',
+      perView: 1,
+      gap    : 0,
+      rewind : true          // sjellje e ngjashme me loop
+    }).mount();
+  }
+
+
+    const energyGlideRoot = document.querySelector('.energy-glide');
+  if (energyGlideRoot && typeof Glide !== 'undefined') {
+    new Glide(energyGlideRoot, {
+      type   : 'carousel',
+      perView: 1,
+      gap    : 0,
+      rewind : true        // sjellje e njëjtë me loop
+    }).mount();
+  }
 });
-
