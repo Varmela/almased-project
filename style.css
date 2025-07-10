@@ -113,9 +113,8 @@
 }
 
 
-.optimal-food {
-  font-size: 40px;
-  line-height: 1.2;
+.optimal-food h1 {
+  font-size: 80px;
   width:400px;
   
 }
@@ -805,6 +804,8 @@ width: 100%;
   align-items: center;
   gap: -10px;
   height:394px;
+  margin-bottom: 40px;
+  margin-top:60px ;
   
   overflow: hidden;
 
@@ -1361,8 +1362,9 @@ margin-left: 60px;
     padding: 0 40px;
     gap: 20px;
     overflow: hidden;
+    padding-right: 100px;
   }
-  .optimal-food{ font-size: 36px; text-align: left; }
+  .optimal-food h1{ font-size: 35px; text-align: left;width:200px; }
   .optimal-food p{ font-size: 18px; }
 
   .hero-text .protein,
@@ -1378,10 +1380,11 @@ margin-left: 60px;
   .hero-text p { font-size: 18px; }
 
   .almased-button{
-    margin-left: 105px;
     height: 50px;
-    width: 120px;
-    font-size: 14px;
+    width: 200px;
+    font-size: 10px;
+    text-align: center;
+    left:35px;
   }
  
  .health-goals {
@@ -1537,7 +1540,7 @@ margin-left: 60px;
 }
 .delicious-section {
   width: 100%;
-  padding: 40px 20px;
+  padding: 20px 20px;
   background: #f1e8e6;
   box-sizing: border-box;
   overflow: hidden;
@@ -1545,15 +1548,15 @@ margin-left: 60px;
 }
 
 .delicious-text {
-  max-width: 400px;
+  max-width: 300px;
   margin: 0 auto;
-  text-align: center;
+  text-align: left;
   font-family: Helvetica Neue LT Std;
   font-weight: 300;
   font-size: 20px;
   color: #238014;
   margin-bottom: 40px;
-  padding: 0 10px;
+
 }
 
 .card-delicious {
@@ -1563,6 +1566,9 @@ margin-left: 60px;
   gap: 10px;
 }
 
+.card-content p{
+  font-size: 9px;
+}
 
 .delicious-image {
   position: relative;
@@ -1608,12 +1614,12 @@ margin-left: 60px;
   background: #55AB26;
   color: white;
   font-family: Jost, sans-serif;
-  font-size: 20px;
+  font-size: 10px;
   padding: 16px;
-  text-align: center;
+  text-align: left;
   border-bottom-left-radius: 20px;
   border-bottom-right-radius: 20px;
-
+border-top-right-radius: 20px;
 }
 
 .available-txt       { font-size: 24px; }
@@ -1626,10 +1632,9 @@ margin-left: 60px;
 
 .info-swiper .swiper-slide{
   position: relative;
+  position:center;
 }
-.information-image{
-  background-color: white;
-}
+
 .info-text {
   display: flex;
     flex-direction: column;
@@ -1641,14 +1646,15 @@ margin-left: 60px;
   }
 
   .doctor-image {
-    width: 55%;
+    width: 60%;
     border-radius: 20px;
     position: relative;
   }
 
   .information-text p {
     text-align: center;
-    font-size: 10px;
+    font-size: 20px;
+   
   }
 
   .doctor-title {
@@ -1682,6 +1688,9 @@ margin-left: 60px;
   width:300px
 }
 
+
+
+
 }
 
 
@@ -1692,7 +1701,7 @@ margin-left: 60px;
 
 .swiper-button-prev2{
   margin-bottom: 30%;
-  left: 100px;
+  left: 200px;
   transform: none;     }
 
 
@@ -1710,7 +1719,7 @@ margin-left: 60px;
   border-radius: 50%;
   font-size: 1.6rem;
   border: 2px solid #55ab26;
-  background: rgba(241,232,230,.85);
+  background: transparent;
   color: #55ab26;
   display: flex;
   align-items: center;
@@ -1722,10 +1731,9 @@ margin-left: 60px;
 
 
 
-.info-glide__track .glide__slides{
-  margin:30px;
-  padding:30px;
-  list-style:none;
-}
 
 .info-glide__track{ overflow:hidden; }
+
+
+
+

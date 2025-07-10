@@ -36,7 +36,7 @@ document.addEventListener('DOMContentLoaded', () => {
 });
 document.addEventListener('DOMContentLoaded', () => {
 
-  /* ============  BENEFITS  ============ */
+  /*  BENEFITS  */
   const benefitsGlideRoot = document.querySelector('.benefits-glide');
   if (benefitsGlideRoot && typeof Glide !== 'undefined') {
     new Glide(benefitsGlideRoot, {
@@ -50,14 +50,14 @@ document.addEventListener('DOMContentLoaded', () => {
     }).mount();
   }
 
-  /* ============  INFO (doctor)  ============ */
-  const infoGlideRoot = document.querySelector('.info-glide');   // class e re
+  /* INFO (doctor)*/
+  const infoGlideRoot = document.querySelector('.info-glide');   
   if (infoGlideRoot && typeof Glide !== 'undefined') {
     new Glide(infoGlideRoot, {
       type   : 'carousel',
       perView: 1,
       gap    : 0,
-      rewind : true          // sjellje e ngjashme me loop
+      rewind : true          
     }).mount();
   }
 
@@ -68,7 +68,7 @@ document.addEventListener('DOMContentLoaded', () => {
       type   : 'carousel',
       perView: 1,
       gap    : 0,
-      rewind : true        // sjellje e njëjtë me loop
+      rewind : true       
     }).mount();
   }
 });
