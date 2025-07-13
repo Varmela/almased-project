@@ -27,7 +27,6 @@
     color: white;
     border: none;
     border-radius: 25px;
-    font-weight: bold;
     cursor: pointer;
     
 }
@@ -635,12 +634,15 @@ border-radius: 10px;
 
 .card-content h4 {
 font-size: 20px;
-margin:0 0 6px;}
+margin:0 0 6px;
+text-align: left;
+}
 
 .card-content p {
   font-size: 14px;
   line-height: 1.4;
   margin:0;
+  text-align: left;
 }
 /* arrows */
 .glide__arrow{
@@ -869,7 +871,7 @@ margin-top: -25px;
 .swiper-button-prev2,
 .swiper-button-next2{
   position:absolute;
-  top:50%;
+  top:70%;
   transform:translateY(-50%);
 
   font-size:2rem;
@@ -1186,7 +1188,7 @@ margin-top: -5px;
   width: 100%;
 height: 100%;
 opacity: 1;
-margin-left: 60px;
+margin-left: 150px;
 
 }
 .newsletter {
@@ -1707,7 +1709,7 @@ border-top-right-radius: 20px;
 
 .swiper-button-next2{
   margin-bottom: 30%;
-  right: 210px;
+  right: 200px;
   transform: none;
 }
 
